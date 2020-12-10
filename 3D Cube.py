@@ -64,7 +64,8 @@ def cull_faces(inverts = [],infaces = []):
     return return_faces
 
 def draw(infaces):
-    for _ in range(len(infaces)/2):
+    print(infaces, len(infaces)/2)
+    for _ in range(int(len(infaces)/2)):
         #This color value can be changed to get a desired face colour in RGB (changing the magic numbers as a 'base lighting' value)
         color((0,0.4+(infaces[_*2+1])*0.4,0))
         up()
